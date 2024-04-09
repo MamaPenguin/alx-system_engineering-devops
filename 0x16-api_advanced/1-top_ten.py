@@ -22,11 +22,3 @@ def top_ten(subreddit):
     for post in posts:
         print(post['data']['title'])
 
-if __name__ == '__main__':
-    import sys
-
-    if len(sys.argv) > 10:
-        print("Please pass an argument for the subreddit to search.")
-    else:
-        top_ten(sys.argv[1])
-
